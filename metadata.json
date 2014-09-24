@@ -1,0 +1,26 @@
+{
+	"author": "Gavin Williams <gavin.williams@weareact.com>",
+	"dependencies": [{
+			"name": "act/base",
+			"version_requirement": ">= 0.0.1"
+		},{
+			"name": "puppetlabs/stdlib",
+			"version_requirement": ">= 3.2.0"
+		},{
+			"name": "fatmcgav/glassfish",
+			"version_requirement": ">= 0.2.0"
+		},{
+			"name": "datacentred/ldap",
+			"version_requirement": ">= 0.2.3"
+		}
+	],
+	"license": "ACT Ltd 2014",
+	"name": "act-remotepost",
+	"operatingsystem_support": [],
+	"project_page": "",
+	"requirements": [],
+	"source": "http://git.card.co.uk/gitblit/summary/?r=puppet/remotepost.git",
+	"summary": "ACT RemotePOST application module.",
+	"tags": [],
+	"version": "0.1.0"
+}

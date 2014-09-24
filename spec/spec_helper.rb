@@ -3,10 +3,12 @@ require 'puppetlabs_spec_helper/module_spec_helper'
 require 'hiera'
 require 'rspec-puppet'
 
+#$: << "spec/fixtures/modules/glassfish/lib"
+
 RSpec.configure do |c|
   c.hiera_config = 'spec/fixtures/hiera/hiera.yaml'
-  c.manifest_dir = 'spec/fixtures/manifests'
-  c.module_path  = 'spec/fixtures/modules'
+#  c.manifest_dir = 'spec/fixtures/manifests'
+#  c.module_path  = 'spec/fixtures/modules'
 
   c.default_facts = {
     :kernel => 'Linux',

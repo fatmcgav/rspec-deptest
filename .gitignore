@@ -1,4 +1,5 @@
 *.lock
+*.swp
 spec/fixtures/
 .bundle
 .librarian

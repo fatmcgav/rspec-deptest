@@ -7,7 +7,7 @@ describe "deptest" do
     Puppet.features.expects(:root?).returns(true).at_least_once
   end
 
-  let(:precondition) { "include glassfish" }
+  let(:precondition) { "include deptest_profiles::software::glassfish" }
 
 #  let(:params) do {
 #    :rps_db_host => 'localhost',

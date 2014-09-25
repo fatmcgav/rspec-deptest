@@ -3,7 +3,11 @@ require 'spec_helper'
 # Describe the class
 describe "deptest" do
   
-  let(:precondition) { "class {'glassfish': }" }
+  before :each do 
+    Puppet.features.expects(:root?).returns(true).at_least_once
+  end
+
+  let(:precondition) { "include glassfish" }
 
 #  let(:params) do {
 #    :rps_db_host => 'localhost',

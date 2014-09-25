@@ -7,16 +7,8 @@ describe "deptest" do
     Puppet.features.expects(:root?).returns(true).at_least_once
   end
 
-  let(:precondition) { "include deptest_profiles::software::glassfish" }
+  let(:precondition) { "require deptest_base::software::glassfish" }
 
-#  let(:params) do {
-#    :rps_db_host => 'localhost',
-#    :rps_db_port => '1521',
-#    :rps_db_sid  => 'XE',
-#    :rps_version => '2.6.30'
-#  }
-#  end
-  
   it { 
     Puppet::Util::Log.level = :debug
     Puppet::Util::Log.newdestination(:console)

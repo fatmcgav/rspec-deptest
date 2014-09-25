@@ -1,6 +1,6 @@
 class deptest {
 
-  include glassfish
+  #include glassfish
 
   glassfish::create_domain { 'test':
     portbase       => 8000,

@@ -7,7 +7,7 @@ describe "deptest" do
     Puppet.features.expects(:root?).returns(true).at_least_once
   end
 
-  let(:precondition) { "require deptest_base::software::glassfish" }
+  let(:pre_condition) { "require deptest_base::software::glassfish" }
 
   it { 
     Puppet::Util::Log.level = :debug

@@ -5,13 +5,13 @@ require 'rspec-puppet'
 
 fixture_path = File.expand_path(File.join(Dir.pwd, 'spec/fixtures'))
 
-# Add fixture lib dirs to LOAD_PATH. Work-around for PUP-3336
-#
-if Puppet.version < "4.0.0"
-  Dir["#{fixture_path}/modules/*/lib"].entries.each do |lib_dir|
-    $LOAD_PATH << lib_dir
-  end
-end
+# # Add fixture lib dirs to LOAD_PATH. Work-around for PUP-3336
+# #
+# if Puppet.version < "4.0.0"
+#   Dir["#{fixture_path}/modules/*/lib"].entries.each do |lib_dir|
+#     $LOAD_PATH << lib_dir
+#   end
+# end
 
 RSpec.configure do |c|
   c.hiera_config = 'spec/fixtures/hiera/hiera.yaml'

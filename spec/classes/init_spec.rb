@@ -18,6 +18,7 @@ describe "deptest" do
 #  end
   
   puts $LOAD_PATH
+  #puts Puppet[:modulepath]
 
   it { 
     Puppet::Util::Log.level = :debug

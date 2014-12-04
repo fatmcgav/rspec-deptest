@@ -17,6 +17,8 @@ describe "deptest" do
 #  }
 #  end
   
+  puts $LOAD_PATH
+
   it { 
     Puppet::Util::Log.level = :debug
     Puppet::Util::Log.newdestination(:console)
